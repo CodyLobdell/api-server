@@ -1,7 +1,7 @@
 'use strict';
 
 const validator = require('./validator');
-
+// test to run when connect to a server
 describe('Test the validator', () => {
   test('Test if query string exists with name and passes request to next', () => {
     const request = { query: { name: 'test'} };

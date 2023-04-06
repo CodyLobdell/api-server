@@ -1,5 +1,5 @@
 'use strict';
-
+// to make sure everything works before passing down to the next middleware
 function validate(request, response, next) {
   let method = request.method;
 
