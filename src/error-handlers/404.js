@@ -1,6 +1,6 @@
 
 'use strict';
-
+// 404 error handler
 function error404(request, response, next) {
   console.log("REQUEST METHOD", request.method);
   if (!request.method.includes(['GET', 'POST', 'PUT', 'DELETE'])) {
