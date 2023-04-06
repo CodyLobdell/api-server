@@ -3,7 +3,7 @@
 const validator = require('./validator');
 
 describe('Test the validator', () => {
-  test('Test if query string exist with name and passes request to next', () => {
+  test('Test if query string exists with name and passes request to next', () => {
     const request = { query: { name: 'test'} };
     const response = {};
     const next = jest.fn();
