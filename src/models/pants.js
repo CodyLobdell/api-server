@@ -4,7 +4,7 @@ require('dotenv').config();
 const sequelize = require('./index');
 const DataTypes = require('sequelize');
 
-const Employee = sequelize.define("Employee", {
+const Pants = sequelize.define("Pants", {
   name: {
     type: DataTypes.STRING,
     allowNull: false
@@ -19,4 +19,4 @@ const Employee = sequelize.define("Employee", {
   }
 });
 
-module.exports = Employee;
+module.exports = Pants;

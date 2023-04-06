@@ -3,7 +3,7 @@
 function validate(request, response, next) {
   let method = request.method;
 
-  if (request.baseUrl.includes("employee")) {
+  if (request.baseUrl.includes("pants")) {
     if ((method === 'PUT' || method === 'DELETE') && request.url === '/') {
       next('Please input an id');
     } else if (method === 'POST' && Object.keys(request.body).length === 0) {
@@ -11,7 +11,7 @@ function validate(request, response, next) {
     } else {
       next();
     }
-  } else if (request.baseUrl.includes('job-title')) {
+  } else if (request.baseUrl.includes('hat')) {
     if ((method === 'PUT' || method === 'DELETE') && request.url === '/') {
       next('Please input an id');
     } else if (method === 'POST' && Object.keys(request.body).length === 0) {
