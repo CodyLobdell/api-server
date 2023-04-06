@@ -5,15 +5,15 @@ const sequelize = require('./index');
 const DataTypes = require('sequelize');
 
 const Hat = sequelize.define("Hat", {
-  title: {
+  color: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  perks: {
+  size: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  salary: {
+  style: {
     type: DataTypes.INTEGER,
     allowNull: false
   }
