@@ -4,19 +4,19 @@ require('dotenv').config();
 const sequelize = require('./index');
 const DataTypes = require('sequelize');
 
-const JobTitle = sequelize.define("Job Title", {
-  title: {
+const Hat = sequelize.define("Hat", {
+  color: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  perks: {
+  size: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  salary: {
+  style: {
     type: DataTypes.INTEGER,
     allowNull: false
   }
 });
 
-module.exports = JobTitle;
+module.exports = Hat;
