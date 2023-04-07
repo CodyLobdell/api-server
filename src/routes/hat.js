@@ -33,7 +33,7 @@ async function createHat(request, response, next) {
 
 async function updateHat(request, response, next) {
   let id = request.params.id;
-  const updatedHat= await Hat.update(request.body, {
+  const updatedHat = await Hat.update(request.body, {
     where: {
       id: id
     }

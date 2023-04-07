@@ -4,7 +4,7 @@ const validator = require('./validator');
 
 describe('Test the validator', () => {
   test('Test if query string found. If contains name, passes request to next', () => {
-    const request = { query: { name: 'test'} };
+    const request = { query: { name: 'test' } };
     const response = {};
     const next = jest.fn();
 
@@ -14,7 +14,7 @@ describe('Test the validator', () => {
   });
 
   test('Test if no query sting found', () => {
-    const request = { query: { id: 'test'} };
+    const request = { query: { id: 'test' } };
     const response = {};
     const next = jest.fn();
 
